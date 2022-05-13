@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM python:3.8.13-bullseye
 
 RUN apt update \
     && apt install -y ca-certificates openssh-client \
