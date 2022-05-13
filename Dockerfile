@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+FROM debian:bullseye
 
 RUN apt update \
     && apt install -y ca-certificates openssh-client \
-    wget curl iptables supervisor \
+    wget curl iptables supervisor procps \
     && rm -rf /var/lib/apt/list/*
 
 ENV DOCKER_CHANNEL=stable \
